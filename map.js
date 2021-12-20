@@ -1,27 +1,27 @@
 var map;
 //var marker1;
 //var marker2;
-var currentInfoWindow = null;
-var markers_cafe = [];
+//var currentInfoWindow = null;
+//var markers_cafe = [];
 
-var place_cafe = [];
+//var place_cafe = [];
 
-function createData(results) {
-  for (let i=0; i<results.length; i++) {
-    x = results[i].geometry.location;
-    y = results[i].name;
-    z = results[i].price_level;
-    s = results[i].url
-    x["name"] = y;
-    x["price"] = z;
-    x["url"] = s;
+//function createData(results) {
+  //for (let i=0; i<results.length; i++) {
+    //x = results[i].geometry.location;
+    //y = results[i].name;
+    //z = results[i].price_level;
+    //s = results[i].url
+    //x["name"] = y;
+    //x["price"] = z;
+    //x["url"] = s;
 
-    switch(results[i].shop) {
-      case "cafe":
-        place_cafe.push(x);
-        break;
-    }
-  } 
+    //switch(results[i].shop) {
+      //case "cafe":
+        //place_cafe.push(x);
+        //break;
+    //}
+  //} 
   /*
   place:
   {
@@ -88,22 +88,22 @@ function initMap() {
   });
 }
 
-function createMarker(){
+//function createMarker(){
   
-}
+//}
 
-function doOpen() {
+//function doOpen() {
   //marker1.setMap(map);
   //marker2.setMap(map);
-  for(int i=0; i<markers_cafe.length; i++){
-    markers_cafe[i].setMap(map);
-  }
-}
+  //for(int i=0; i<markers_cafe.length; i++){
+    //markers_cafe[i].setMap(map);
+  //}
+//}
 
-function doClose() {
+//function doClose() {
   //marker1.setMap(null);
   //marker2.setMap(null);
-  for(int i=0; i<markers_cafe.length; i++){
-    markers_cafe[i].setMap(null);
-  }
-}
+  //for(int i=0; i<markers_cafe.length; i++){
+    //markers_cafe[i].setMap(null);
+  //}
+//}
