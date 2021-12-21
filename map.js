@@ -5,10 +5,11 @@ var marker;
 
 //var currentInfoWindow = null;
 
-//var place_cafe = [], place_famires = [], place_hamburger = [], place_karaoke = [], place_netcafe = [];
-//var markers_cafe = [], markers_famires = [], markers_hamburger = [], markers_karaoke = [], markers_netcafe = []; 
+var place_cafe = [];
+var markers_cafe = [];
 
 function initialize() {
+  createData(shinjuku_data.results);
   var latlng = new google.maps.LatLng(35.69092, 139.7002579);
   var opts = {
     zoom: 16,
