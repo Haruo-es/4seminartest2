@@ -48,6 +48,7 @@ function createData(results) {
         break;
     }
   } 
+}
 
 function doOpen() {
   marker.setMap(map);
