@@ -41,8 +41,9 @@ function initialize() {
   marker2 = new google.maps.Marker({
     position: m_latlng2
   });
-  
 }
+
+
 //function createMarker(i, place) {
   //var marker = new google.maps.Marker({
     //position: { lat:place[i].lat, lng:place[i].lng },
