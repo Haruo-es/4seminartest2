@@ -45,6 +45,22 @@ function initialize() {
   //createData(shinjuku_data.results);
 //}
 
+function createData(results) {
+  for (let i=0; i<results.length; i++) {
+    x = results[i].geometry.location;
+    y = results[i].name;
+    z = results[i].price_level;
+    s = results[i].url
+    x["name"] = y;
+    x["price"] = z;
+    x["url"] = s;
+
+    switch(results[i].shop) {
+      case "cafe":
+        place_cafe.push(x);
+        break;
+    }
+  } 
 
 function doOpen() {
   marker.setMap(map);
