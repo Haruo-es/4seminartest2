@@ -18,7 +18,6 @@ function initialize() {
   var m_latlng = new google.maps.LatLng(place_cafe[1].lat,place_cafe[1].lng);
   marker = new google.maps.Marker({
     position: m_latlng,
-    title: place[1].name
   });
 }
 
