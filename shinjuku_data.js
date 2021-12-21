@@ -1,4 +1,4 @@
-/ cafe: 46, famires: 5, hamburger: 6, karaoke: 31, netcafe: 8
+// cafe: 46, famires: 5, hamburger: 6, karaoke: 31, netcafe: 8
 // 96
 
 shinjuku_data = {
