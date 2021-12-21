@@ -21,16 +21,6 @@ function initialize() {
     title: place[1].name
   });
 }
-  //var m_latlng1 = new google.maps.LatLng(33.965074,130.952654);
-  //marker1 = new google.maps.Marker({
-    //position: m_latlng1
-  //});
-
-  //var m_latlng2 = new google.maps.LatLng(33.958739,130.964155);
-  //marker2 = new google.maps.Marker({
-    //position: m_latlng2
-  //});
-//}
 
 function createData(results) {
   for (let i=0; i<results.length; i++) {
@@ -52,16 +42,8 @@ function createData(results) {
 
 function doOpen() {
   marker.setMap(map);
-  //marker2.setMap(map);
-  //for(int i=0; i<markers_cafe.length; i++){
-    //markers_cafe[0].setMap(map);
-  //}
 }
 
 function doClose() {
   marker.setMap(null);
-  //marker2.setMap(null);
-  //for(int i=0; i<markers_cafe.length; i++){
-    //markers_cafe[i].setMap(null);
-  //}
 }
