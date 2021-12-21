@@ -49,7 +49,7 @@ function initialize() {
     //position: { lat:place[i].lat, lng:place[i].lng },
     //map: map,
     //title: place[i].name,
-  });
+  //});
 
   //markers.push(marker);
 
