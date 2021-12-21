@@ -1,5 +1,6 @@
 var map;
-var marker1;
+var marker;
+//var marker1;
 //var marker2;
 
 //var currentInfoWindow = null;
@@ -8,13 +9,19 @@ var marker1;
 //var markers_cafe = [], markers_famires = [], markers_hamburger = [], markers_karaoke = [], markers_netcafe = []; 
 
 function initialize() {
-  var latlng = new google.maps.LatLng(lat: 35.69092, lng: 139.7002579);
+  var latlng = new google.maps.LatLng(35.69092, 139.7002579);
   var opts = {
-    zoom: 14,
+    zoom: 16,
     center: latlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   map = new google.maps.Map(document.getElementById("map_canvas"), opts);
+  
+  var m_latlng = new google.maps.LatLng(place_cafe[1].lat,place_cafe[1].lng);
+  marker = new google.maps.Marker({
+    position: m_latlng,
+    title: place[1].name
+  });
 }
   //var m_latlng1 = new google.maps.LatLng(33.965074,130.952654);
   //marker1 = new google.maps.Marker({
