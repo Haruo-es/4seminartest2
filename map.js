@@ -9,7 +9,6 @@ var place_cafe = [];
 var markers_cafe = [];
 
 function initialize() {
-  createData(shinjuku_data.results);
   var latlng = new google.maps.LatLng(35.69092, 139.7002579);
   var opts = {
     zoom: 16,
@@ -17,6 +16,8 @@ function initialize() {
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   map = new google.maps.Map(document.getElementById("map_canvas"), opts);
+  
+  createData(shinjuku_data.results);
   
   var m_latlng = new google.maps.LatLng(place_cafe[1].lat,place_cafe[1].lng);
   marker = new google.maps.Marker({
