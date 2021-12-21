@@ -4,7 +4,7 @@ var marker;
 var place_cafe = [];
 var markers_cafe = [];
 
-function initialize() {
+function initMap() {
   var latlng = new google.maps.LatLng(35.69092, 139.7002579);
   var opts = {
     zoom: 16,
