@@ -1,6 +1,6 @@
 var map;
-//var marker1;
-//var marker2;
+var marker1;
+var marker2;
 //var currentInfoWindow = null;
 //var markers_cafe = [];
 
@@ -22,18 +22,6 @@ var map;
         //break;
     //}
   //} 
-  /*
-  place:
-  {
-    i:
-      lat: xxx
-      lng: yyy
-      name: "zzz"
-      price: 0
-  }
-  */
-}
-
 
 function initialize() {
   var latlng = new google.maps.LatLng(33.961942,130.958662);
@@ -44,15 +32,15 @@ function initialize() {
   };
   map = new google.maps.Map(document.getElementById("map_canvas"), opts);
 
-  //var m_latlng1 = new google.maps.LatLng(33.965074,130.952654);
-  //marker1 = new google.maps.Marker({
-    //position: m_latlng1
-  //});
+  var m_latlng1 = new google.maps.LatLng(33.965074,130.952654);
+  marker1 = new google.maps.Marker({
+    position: m_latlng1
+  });
 
-  //var m_latlng2 = new google.maps.LatLng(33.958739,130.964155);
-  //marker2 = new google.maps.Marker({
-    //position: m_latlng2
-  //});
+  var m_latlng2 = new google.maps.LatLng(33.958739,130.964155);
+  marker2 = new google.maps.Marker({
+    position: m_latlng2
+  });
   
 }
 //function createMarker(i, place) {
@@ -92,18 +80,18 @@ function initialize() {
   
 //}
 
-//function doOpen() {
-  //marker1.setMap(map);
-  //marker2.setMap(map);
+function doOpen() {
+  marker1.setMap(map);
+  marker2.setMap(map);
   //for(int i=0; i<markers_cafe.length; i++){
-    //markers_cafe[i].setMap(map);
+    //markers_cafe[0].setMap(map);
   //}
-//}
+}
 
-//function doClose() {
-  //marker1.setMap(null);
-  //marker2.setMap(null);
+function doClose() {
+  marker1.setMap(null);
+  marker2.setMap(null);
   //for(int i=0; i<markers_cafe.length; i++){
     //markers_cafe[i].setMap(null);
   //}
-//}
+}
